@@ -1,14 +1,3 @@
----
-title: A catchy title
-subtitle: catchier subtitle
-author:
-- Author one
-- Author Two
-institute:
-- Institute
-date: Fall 2017
----
-
 
 ## Bullets
 
