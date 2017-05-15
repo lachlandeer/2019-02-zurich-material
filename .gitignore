@@ -1,1 +1,3 @@
 figures/*/*-converted-to.pdf
+out/*.pdf
+.snakemake
