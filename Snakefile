@@ -28,4 +28,4 @@ rule buildSlides:
 
 rule pdfclean:
     shell:
-        "rm output/*.pdf"
+        "rm out/*.pdf"
