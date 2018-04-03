@@ -5,27 +5,29 @@ SECTIONS = ["content"]
 
 ## --- Build Rules --- ##
 
-rule buildSlides:
+rule build_slides:
     input:
-        styleFile = "beamerthemeLagonBleu.sty",
-        latexPreamble = "preamble.tex",
+        style_file = "beamerthemeLagonBleu.sty",
+        style_tex  = "style.tex",
+        template   = "template.beamer" ,
         #biblio = "refs.bib",
         #bibclass = "chicago.csl",
         logo = "figures/logo/by-nc-sa-ccLicense.eps",
         #figures = expand("figures/{iFigure}",      iFigure  = FIGURES),
-        metaData = "slideConfig.yaml",
+        metadata = "slide_config.yaml",
         section = expand("sections/{iSection}.md",  iSection = SECTIONS)
     output:
         "out/slides.pdf"
     shell:
-        "pandoc -t beamer -H preamble.tex \
-            {input.metaData} \
+        "pandoc -t beamer \
+            {input.metadata} \
             {input.section} \
             --filter pandoc-citeproc \
             --slide-level 2 \
             --latex-engine=pdflatex \
+            --template=template.beamer \
             -o {output}"
 
-rule pdfclean:
+rule pdf_clean:
     shell:
         "rm out/*.pdf"
