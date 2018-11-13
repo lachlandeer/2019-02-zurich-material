@@ -55,7 +55,7 @@
     * Letting us know how you are progressing
     * Providing us with feedback
 
-* There is a code of conduct [here](http://www.datacarpentry.org/code-of-conduct/)
+* There is a code of conduct [\alert{here}](http://www.datacarpentry.org/code-of-conduct/)
     * Summary: *Let's be nice to each other*
 
 ## Structure
