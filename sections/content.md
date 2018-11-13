@@ -86,12 +86,12 @@
 
 # Unix shell
 
-## 
+##
 ![Your Filesystem](figures/filesystem.svg)
 
-## Home Directories
+##
 
-<!-- ![alt text](http://swcarpentry.github.io/shell-novice/fig/home-directories.svg) -->
+![Home Directory Structure](figures/home-directories.svg)
 
 
 ## Exercise: relative path resolution
@@ -102,7 +102,10 @@ Using the filesystem diagram below, if `pwd` displays `/Users/thing`, what will 
 3. `2012-12-01/ 2013-01-08/ 2013-01-27/`
 4. `original/ pnas_final/ pnas_sub/`
 
-<!-- ![alt text](http://swcarpentry.github.io/shell-novice/fig/filesystem-challenge.svg "Logo Title Text 1") -->
+
+##
+
+![Example Filesystem](figures/filesystem-challenge.svg)
 
 
 ## Exercise: Renaming Files
@@ -163,9 +166,9 @@ $ rm -r -i 2016-05-20-data/
 ```
 
 
-## Pipe & Filter Logic
+##
 
-<!-- ![alt text](http://swcarpentry.github.io/shell-novice/fig/redirects-and-pipes.png) -->
+![Pipe & Filter Logic](http://swcarpentry.github.io/shell-novice/fig/redirects-and-pipes.png)
 
 
 
