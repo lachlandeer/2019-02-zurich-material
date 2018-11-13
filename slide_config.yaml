@@ -1,24 +1,14 @@
 ---
-title:  "A Strategy to Defeat Whitewalkers:"
-subtitle: "Will Dragons Suffice?"
-shorttitle: "Defeating Whitewalkers with Dragons"
+title:  "Software Carpentry"
+subtitle: "@ Uni Trento"
+shorttitle: "SWC Trento"
 author:
-- name: Jon Snow
-  short: Snow
-  institute: 1
-  speaker: true
-- name: Daenerys Targaryen
-  short: Targaryen
-  institute: 2
-institute:
-- name: House Stark
-  short: Stark
-  id: 1
-- name: House Targaryen
-  short: Targaryen
-  id: 2
+- name: Marianne Corvellec
+  short: Corvellec
+- name: Lachlan Deer
+  short: Deer
 useshortauthors: true
 toc: false
-date: Fall 2019
+date: Novemeber 2018
 section-titles: true
 ...
