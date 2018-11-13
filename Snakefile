@@ -9,6 +9,7 @@ rule build_slides:
     input:
         style_file = "beamerthemeLagonBleu.sty",
         style_tex  = "style.tex",
+        latex_preamble = "preamble.tex"
         template   = "template.beamer" ,
         #biblio = "refs.bib",
         #bibclass = "chicago.csl",
@@ -19,7 +20,7 @@ rule build_slides:
     output:
         "out/slides.pdf"
     shell:
-        "pandoc -t beamer \
+        "pandoc -t beamer -H preamble.tex \
             {input.metadata} \
             {input.section} \
             --filter pandoc-citeproc \

@@ -116,7 +116,7 @@ After creating and saving this file you realize you misspelled the filename! You
 ## Exercise: Moving and Copying
 What is the output of the closing `ls` command in the sequence shown below?
 
-```{bash, eval=FALSE}
+```bash
 $ pwd
 /Users/jamie/data
 $ ls
@@ -142,19 +142,19 @@ Which of the following set of commands would achieve this objective? What would 
 ## Exercise: Copying Structure, without files (cont.)
 
 Option One:
-```{bash, eval=FALSE}
+```bash
 $ cp -r 2016-05-18-data/ 2016-05-20-data/
 $ rm 2016-05-20-data/raw/*
 $ rm 2016-05-20-data/processed/*
 ```
 Option 2:
-```{bash, eval=FALSE}
+```bash
 $ rm 2016-05-20-data/raw/*
 $ rm 2016-05-20-data/processed/*
 $ cp -r 2016-05-18-data/ 2016-5-20-data/
 ```
 Option 3:
-```{bash, eval=FALSE}
+```bash
 $ cp -r 2016-05-18-data/ 2016-05-20-data/
 $ rm -r -i 2016-05-20-data/
 ```
@@ -170,7 +170,7 @@ $ rm -r -i 2016-05-20-data/
 
 In our current directory, we want to find the 3 files which have the least number of lines. Which command listed below would work?
 
-```{bash, eval=FALSE}
+```bash
 wc -l * > sort -n > head -n 3
 wc -l * | sort -n | head -n 1-3
 wc -l * | head -n 3 | sort -n
@@ -179,7 +179,7 @@ wc -l * | sort -n | head -n 3
 
 ## Exercise: Which pipe?
 The file `animals.txt` contains 586 lines of data formatted as follows:
-```
+```bash
 2012-11-05,deer
 2012-11-05,rabbit
 2012-11-05,raccoon
@@ -198,7 +198,7 @@ Assuming your current directory is `data-shell/data/`, what command would you us
 
 ## Exercise: Saving Files in a loop
 In the same directory, what is the effect of this loop?
-```{bash, eval=FALSE}
+```bash
 for alkanes in *.pdb
 do
     echo $alkanes
@@ -213,7 +213,7 @@ What if we replace `>` with `>>`?
 A loop is a way to do many things at once — or to make many mistakes at once if it does the wrong thing. One way to check what a loop would do is to echo the commands it would run instead of actually running them.
 
 Suppose we want to preview the commands the following loop will execute without actually running those commands:
-```{bash, eval=FALSE}
+```bash
 for file in *.pdb
 do
   analyze $file > analyzed-$file
@@ -222,14 +222,14 @@ done
 What is the difference between the two loops below, and which one would we want to run?
 
 ## Exercise: Doing a Dry Run (cont.)
-```{bash, eval=FALSE}
+```bash
 # Version 1
 for file in *.pdb
 do
   echo analyze $file > analyzed-$file
 done
 ```
-```{bash, eval=FALSE}
+```bash
 # Version 2
 for file in *.pdb
 do
@@ -239,7 +239,7 @@ done
 
 ## Exercise: Script to List Unique Species
 Leah has several hundred data files, each of which is formatted like this:
-```
+```bash
 2013-11-05,deer,5
 2013-11-05,rabbit,22
 2013-11-05,raccoon,7
@@ -254,8 +254,8 @@ An example of this type of file is given in `data-shell/data/animal-counts/anima
 Write a shell script called `species.sh` that takes any number of filenames as command-line arguments, and uses `cut`, `sort`, and `uniq` to print a list of the unique species appearing in each of those files separately.
 
 ## Exercise: Debugging Scripts
-Suppose you have saved the following script in a file called do-errors.sh in Nelle’s north-pacific-gyre/2012-07-03 directory:
-```{bash}
+Suppose you have saved the following script in a file called `do-errors.sh` in Nelle’s north-pacific-gyre/2012-07-03 directory:
+```bash
 # Calculate stats for data files.
 for datafile in "$@"
 do
@@ -264,11 +264,11 @@ do
 done
 ```
 When you run it:
-```{bash}
+```bash
 $ bash do-errors.sh NENE*[AB].txt
 ```
 the output is blank. To figure out why, re-run the script using the -x option:
-```{}
+```bash
 bash -x do-errors.sh NENE*[AB].txt
 ```
 What is the output showing you? Which line is responsible for the error?
