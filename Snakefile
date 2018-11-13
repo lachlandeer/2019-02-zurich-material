@@ -25,6 +25,7 @@ rule build_slides:
             --filter pandoc-citeproc \
             --slide-level 2 \
             --latex-engine=pdflatex \
+            --highlight-style zenburn \
             --template=template.beamer \
             -o {output}"
 
