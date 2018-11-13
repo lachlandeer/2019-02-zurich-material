@@ -9,7 +9,7 @@ rule build_slides:
     input:
         style_file = "beamerthemeLagonBleu.sty",
         style_tex  = "style.tex",
-        latex_preamble = "preamble.tex"
+        latex_preamble = "preamble.tex",
         template   = "template.beamer" ,
         #biblio = "refs.bib",
         #bibclass = "chicago.csl",

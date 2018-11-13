@@ -1,3 +1,6 @@
+##
+
+![Hello](https://www.ethz.ch/de/news-und-veranstaltungen/eth-news/news/2014/02/grueezi-und-welcome-in-der-schweiz/_jcr_content/news_content/fullwidthimage_0/image.imageformat.fullwidth.22217476.jpg)
 
 # Preliminaries
 
