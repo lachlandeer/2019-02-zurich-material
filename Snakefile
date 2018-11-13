@@ -23,7 +23,7 @@ rule build_slides:
         "pandoc -t beamer -H preamble.tex \
             {input.metadata} \
             {input.section} \
-            --filter pandoc-citeproc \
+            --filter=pandoc-svg.py \
             --slide-level 2 \
             --latex-engine=pdflatex \
             --highlight-style zenburn \

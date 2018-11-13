@@ -86,8 +86,8 @@
 
 # Unix shell
 
-## Your File System
-<!-- ![alt text](http://swcarpentry.github.io/shell-novice/fig/filesystem.svg) -->
+## 
+![Your Filesystem](figures/filesystem.svg)
 
 ## Home Directories
 
