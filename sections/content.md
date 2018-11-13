@@ -271,4 +271,4 @@ the output is blank. To figure out why, re-run the script using the -x option:
 ```bash
 bash -x do-errors.sh NENE*[AB].txt
 ```
-What is the output showing you? Which line is responsible for the error?
+<!-- What is the output showing you? Which line is responsible for the error? -->
