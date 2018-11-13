@@ -95,7 +95,7 @@
 
 
 ## Exercise: relative path resolution
-Using the filesystem diagram below, if `pwd` displays `/Users/thing`, what will `ls -F ../backup display`?
+Using the filesystem diagram below, if `pwd` displays `/Users/thing`, what is the output of `ls -F ../backup`?
 
 1. `../backup: No such file or directory`
 2. `2012-12-01 2013-01-08 2013-01-27`
