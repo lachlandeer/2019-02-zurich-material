@@ -7,13 +7,13 @@
 ## Introductions
 
 * Instructors:
-    * Marianne
+    * Julian
     * Lachlan (me)
 * Organizers:
-    * Rafaello
-    * (Others...)
+    * Lachlan
+    * Eva
 * Helpers:
-    - Gianfranco Abrusci, Mirko Bagnarol, Matteo Finazzer, Simone Orioli, Michele Turelli
+    - Stephan Schmeing, Bret Benheim
 - Learners:
     * You
 
@@ -25,8 +25,7 @@
     * Coverage:
         * the Unix Shell: text based instructions
         * Git: Version control
-        * Python
-        * Reproducible Workflows: Make
+        * `R`
 
 ## Learning Objectives
 
@@ -34,11 +33,13 @@
 *We don't expect you to have any computational experience before we start*
 
 - By the end we want you to be able to:
-    1. work with data in Python (summary/group statistics, plotting) ...
-    1. ... in a way that is reproducible by yourself and others
-- My number one coding tip:
-    - Don't focus on the syntax, but on the way we think
-        - you can google the syntax, hard to google how we think
+    1. work with data in R (summary/group statistics, plotting) ...
+    2. ... in a way that is reproducible by yourself and others
+        - Version Controlled
+        - Clear scripts and/or documentation
+- Tip:
+    - if lost, don't focus on the syntax, but on the way we think
+        - you can google the syntax, hard to google how to think about a problem
 
 ## Learning Environment
 
@@ -62,15 +63,15 @@
 
 * Day One:
     * Morning (now-ish): Unix Shell
-    * Afternoon: Python
+    * Afternoon: Git
 * Day Two:
-    * Morning: Git
-    * Afternoon: Make
+    * Morning: `R` part 1
+    * Afternoon: `R` part 2
 
 * Session Times:
-    * Morning: 09.00 - 12.00
-    * Lunch: 12.00 - 13.00
-    * Afternoon: 13.00 - 14.00
+    * Morning: 09.30 - 12.30
+    * Lunch: 12.30 - 14.00
+    * Afternoon: 14.00 - 17.00
 
 * There are coffee breaks... roughly half way through a session
 * Join us for lunch
@@ -78,11 +79,11 @@
 
 ## All the links in one place:
 
-* Course Website is [\alert{here}](https://mkcor.github.io/2018-11-14-trento/)
-* A community document (Etherpad) is [\alert{here}](https://pad.carpentries.org/2018-11-14-trento)
+* Course Website is [\alert{here}](https://mkcor.github.io/2019-02-17-zurich/)
+* A community document (Etherpad) is [\alert{here}](https://pad.carpentries.org/2019-02-17-zurich)
 * These slides are available [\alert{here}]()
-* Pre-course survey is [\alert{here}](https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id=2018-11-14-trento)
-* Post-workshop survey is [\alert{here}](https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_id=2018-11-14-trento)
+* Pre-course survey is [\alert{here}](https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id=2019-02-17-zurich)
+* Post-workshop survey is [\alert{here}](https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_id=2019-02-17-zurich)
 
 # Unix shell
 
@@ -368,4 +369,4 @@ bash -x do-errors.sh NENE*[AB].txt
 
 ## Solution
 
-The -x flag causes bash to run in debug mode. This prints out each command as it is run, which will help you to locate errors. In this example, we can see that echo isn't printing anything. We have made a typo in the loop variable name, and the variable datfile doesn't exist, hence returning an empty string. 
+The -x flag causes bash to run in debug mode. This prints out each command as it is run, which will help you to locate errors. In this example, we can see that echo isn't printing anything. We have made a typo in the loop variable name, and the variable datfile doesn't exist, hence returning an empty string.
