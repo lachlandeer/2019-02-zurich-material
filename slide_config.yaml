@@ -1,15 +1,16 @@
 ---
 title:  "Software Carpentry"
-subtitle: "@ Uni Trento"
-shorttitle: "SWC Trento"
+subtitle: "@ Uni Zurich"
+shorttitle: "SWC Zurich"
 author:
-- name: Marianne Corvellec
-  short: Corvellec
 - name: Lachlan Deer
   short: Deer
   speaker: true
+- name: Julian Langer
+  short: Langer
+  speaker: false
 useshortauthors: true
 toc: false
-date: November 2018
+date: February 2019
 section-titles: true
 ...
