@@ -5,7 +5,7 @@
 
 # --- User Decision --- #
 
-include_unix = False
+include_shell_ex = False
 
 # --- Libraries --- #
 import os, re
@@ -28,7 +28,7 @@ PDF_ENGINE = get_pdf_engine()
 
 FIGURES = glob_wildcards("figures/{iFigure}.pdf").iFigure
 
-if include_unix == True:
+if include_shell_ex == True:
     SECTIONS = ["preliminaries", "unix_ex"]
 else:
     SECTIONS = ["preliminaries"]
