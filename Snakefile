@@ -16,7 +16,7 @@ def get_pdf_engine():
     pandoc_version = os.popen("pandoc --version").read().splitlines()[0]
     version_number = int(re.search('\d', pandoc_version).group(0))
     print('Working with pandoc version:', version_number)
-    if version_number == 1:
+    if version_number < 2:
         pdf_engine  = "--latex-engine=pdflatex"
     else:
         pdf_engine = "--pdf-engine=pdflatex"
