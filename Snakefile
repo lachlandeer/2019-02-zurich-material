@@ -3,6 +3,10 @@
 ## author: @lachlandeer
 ##
 
+# --- User Decision --- #
+
+include_unix = False
+
 # --- Libraries --- #
 import os, re
 
@@ -23,7 +27,11 @@ PDF_ENGINE = get_pdf_engine()
 # --- Set up Dictionary of content --- #
 
 FIGURES = glob_wildcards("figures/{iFigure}.pdf").iFigure
-SECTIONS = ["preliminaries"]
+
+if include_unix == True:
+    SECTIONS = ["preliminaries", "unix_ex"]
+else:
+    SECTIONS = ["preliminaries"]
 
 # --- Build Rules --- #
 
