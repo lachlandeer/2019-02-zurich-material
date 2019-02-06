@@ -5,7 +5,7 @@
 
 # --- User Decision --- #
 
-include_shell_ex = False
+include_shell_ex = True
 
 # --- Libraries --- #
 import os, re
