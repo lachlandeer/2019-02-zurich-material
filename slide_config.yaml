@@ -3,6 +3,9 @@ title:  "Software Carpentry"
 subtitle: "@ Uni Zurich"
 shorttitle: "SWC Zurich"
 author:
+- name: Ulrich Bergmann
+  short: Bergmann
+  speaker: false
 - name: Lachlan Deer
   short: Deer
   speaker: true
