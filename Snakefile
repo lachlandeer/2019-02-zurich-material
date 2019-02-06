@@ -29,8 +29,10 @@ PDF_ENGINE = get_pdf_engine()
 FIGURES = glob_wildcards("figures/{iFigure}.pdf").iFigure
 
 if include_shell_ex == True:
+    print("including shell exercises in slides")
     SECTIONS = ["preliminaries", "unix_ex"]
 else:
+    print("no shell exercises in slides")
     SECTIONS = ["preliminaries"]
 
 # --- Build Rules --- #
