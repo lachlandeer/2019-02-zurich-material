@@ -1,7 +1,8 @@
 
 ## --- Set up Dictionary of content --- ##
 
-SECTIONS = ["content"]
+FIGURES = glob_wildcards("figures/{iFigure}.pdf").iFigure
+SECTIONS = ["preliminaries"]
 
 ## --- Build Rules --- ##
 
@@ -11,9 +12,10 @@ rule build_slides:
         style_tex  = "style.tex",
         latex_preamble = "preamble.tex",
         template   = "template.beamer" ,
+        img_convert = "pandoc-svg.py",
         #biblio = "refs.bib",
         #bibclass = "chicago.csl",
-        logo = "figures/logo/by-nc-sa-ccLicense.eps",
+        logo = "figures/logo/UZH_logo_borderGreen.png",
         #figures = expand("figures/{iFigure}",      iFigure  = FIGURES),
         metadata = "slide_config.yaml",
         section = expand("sections/{iSection}.md",  iSection = SECTIONS)
